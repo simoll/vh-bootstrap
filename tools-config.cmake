@@ -1,0 +1,7 @@
+set(LLD_PATH /home/buildbot/install/bin/ld.lld)
+set(CMAKE_EXE_LINKER_FLAGS    "-fuse-ld=lld")
+set(CMAKE_MODULE_LINKER_FLAGS "-fuse-ld=lld")
+set(CMAKE_SHARED_LINKER_FLAGS "-fuse-ld=lld")
+set(CMAKE_LINKER_EXE ${LLD_PATH})
+set(CMAKE_CXX_COMPILER ccache /home/buildbot/install/bin/clang++)
+set(CMAKE_C_COMPILER ccache /home/buildbot/install/bin/clang)
