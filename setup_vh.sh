@@ -47,8 +47,8 @@ cd ${LLVM_BUILD} && ${NINJA} install
 INIT_SCRIPT=${HOME}/.prefix.sh
 
 cat > ${INIT_SCRIPT} << EOF
-export PATH=${PREFIX}/install/bin:${PATH}
-export LD_LIBRARY_PATH=${PREFIX}/install/lib:${LD_LIBRARY_PATH}
+export PATH=${PREFIX}/bin:${PATH}
+export LD_LIBRARY_PATH=${PREFIX}/lib:${LD_LIBRARY_PATH}
 export CC=${PREFIX}/bin/clang
 export CXX=${PREFIX}/bin/clang++
 EOF
